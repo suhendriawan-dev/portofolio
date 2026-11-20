@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAFAFA">
+  <meta name="description" content="Portofolio SUHENDRIAWAN — Junior Full-Stack Web Developer (PHP & Laravel)">
+  <title>SUHENDRIAWAN — Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("portfolio-theme") === "dark") {
+        document.documentElement.dataset.theme = "dark";
+      }
+    } catch (error) {
+      console.warn("Preferensi tema tidak dapat dibaca.", error);
+    }
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="SUHENDRIAWAN, beranda">
+        <span class="brand-mark">S.</span>
+        <span>SUHENDRIAWAN</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span>
+      </button>
+      <div class="nav-panel" id="primary-navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Aktifkan tema gelap">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"></path></svg>
+          <span class="theme-label">Dark mode</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR WORK</p>
+        <p class="hero-intro">Halo, saya</p>
+        <h1>SUHENDRIAWAN<span class="period">.</span></h1>
+        <h2><span class="typewriter-role" data-typewriter>Fullstack Web Developer</span></h2>
+        <p class="hero-description">Suka mengurai masalah jadi solusi. Dengan PHP dan Laravel, aku bangun web dari backend sampai tampilan. Junior, tapi gak setengah-setengah</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Lihat proyek <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Hubungi saya</a>
+        </div>
+        <div class="hero-meta"><span>BERBASIS DI DEPOK, INDONESIA</span><span class="meta-divider"></span><span>BEKERJA SECARA REMOTE</span></div>
+      </div>
+      <a class="scroll-cue mono" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="section section-bordered" id="about">
+      <div class="container about-grid">
+        <div class="section-label reveal"><span class="mono">01 / ABOUT</span><span class="label-line"></span></div>
+        <div class="about-content reveal">
+          <h2>Saya percaya sistem yang baik <span>terlihat sederhana, tapi kokoh di baliknya.</span></h2>
+          <div class="about-details">
+            <p>Saya adalah Junior Fullstack Web Developer dengan spesialisasi PHP dan Laravel, dengan ketertarikan pada pengembangan aplikasi web yang terstruktur dan berkelanjutan. Saya menerjemahkan kebutuhan bisnis menjadi solusi digital yang andal, mulai dari perancangan basis data hingga antarmuka yang intuitif.</p>
+            <p>Dengan latar belakang di bidang Teknologi Informasi, saya terus mengembangkan kompetensi melalui pembelajaran berkelanjutan dan pengerjaan proyek nyata. Saya mengutamakan kode yang bersih, arsitektur yang terstruktur, dan komunikasi yang efektif dalam setiap kolaborasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bordered" id="skills">
+      <div class="container">
+        <div class="section-label reveal"><span class="mono">02 / TOOLKIT</span><span class="label-line"></span></div>
+        <div class="skills-layout">
+          <div class="section-intro reveal"><h2>Tools &amp; keahlian</h2><p>Teknologi dan bahasa pemrograman yang saya gunakan untuk membangun aplikasi web dari sisi frontend hingga backend.</p></div>
+          <div class="skills-grid">
+            <article class="skill-item reveal"><span class="mono">01</span><h3>HTML5</h3><p>Semantic markup</p></article>
+            <article class="skill-item reveal"><span class="mono">02</span><h3>CSS3</h3><p>Responsive styling</p></article>
+            <article class="skill-item reveal"><span class="mono">03</span><h3>JavaScript</h3><p>Interaktivitas &amp; logika frontend</p></article>
+            <article class="skill-item reveal"><span class="mono">04</span><h3>PHP</h3><p>Pemrograman backend</p></article>
+            <article class="skill-item reveal"><span class="mono">05</span><h3>Laravel</h3><p>Framework PHP untuk aplikasi web</p></article>
+            <article class="skill-item reveal"><span class="mono">06</span><h3>Python</h3><p>Scripting &amp; otomasi</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bordered" id="projects">
+      <div class="container">
+        <div class="section-label reveal"><span class="mono">03 / SELECTED WORK</span><span class="label-line"></span></div>
+        <div class="section-heading-row reveal"><div><h2>Proyek pilihan</h2><p>Beberapa proyek digital yang saya rancang dan kembangkan.</p></div></div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <button class="project-preview" type="button" data-project-detail-open aria-haspopup="dialog" aria-controls="asset-control-detail" aria-label="Lihat detail proyek Asset Control">
+              <img src="images/projects/dashboard-sistem/asset-control-logo.png" alt="Logo Asset Control dengan ilustrasi QR Code dan tanda verifikasi." width="1536" height="768" loading="lazy">
+              <span class="art-caption mono">ASSET CONTROL / 2026</span>
+              <span class="project-preview-cta mono">LIHAT DETAIL <span aria-hidden="true">↗</span></span>
+            </button>
+            <div class="project-info"><div><p class="mono project-type">01 — WEB APPLICATION</p><h3>Asset Control: Sistem Inventaris Aset</h3></div></div>
+            <p class="project-description">Sistem Inventaris Aset berbasis web untuk mengelola data aset, melihat ringkasan dashboard, dan memverifikasi aset melalui QR Code.</p>
+            <div class="project-bottom"><div class="tag-list mono"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="project-card reveal">
+            <button class="project-preview" type="button" data-project-detail-open aria-haspopup="dialog" aria-controls="sm-sport-center-detail" aria-label="Lihat detail proyek SM Sport Center">
+              <img src="images/projects/sm-sport-center/sm-sport-center-logo.png" alt="Logo SM Sport Center dengan ilustrasi pelari dan tulisan Sport Center." width="1536" height="768" loading="lazy">
+              <span class="art-caption mono">SM SPORT CENTER / 2026</span>
+              <span class="project-preview-cta mono">LIHAT DETAIL <span aria-hidden="true">↗</span></span>
+            </button>
+            <div class="project-info"><div><p class="mono project-type">02 — WEB APPLICATION</p><h3>SM Sport Center: Booking Lapangan</h3></div></div>
+            <p class="project-description">Platform reservasi online untuk memilih cabang olahraga, melihat detail lapangan, dan mengelola booking.</p>
+          </article>
+        </div>
+        <dialog class="project-detail-dialog" id="asset-control-detail" aria-labelledby="asset-control-title">
+          <div class="project-detail-header">
+            <div><p class="mono project-type">01 — WEB APPLICATION</p><h2 id="asset-control-title">Asset Control: Sistem Inventaris Aset</h2></div>
+            <button class="project-detail-close" type="button" data-project-detail-close aria-label="Tutup detail proyek">×</button>
+          </div>
+          <div class="project-detail-body">
+            <div class="project-detail-copy">
+              <p class="project-role mono">FULLSTACK DEVELOPER</p>
+              <p class="project-detail-summary">Sistem Inventaris Aset berbasis web untuk mengelola data aset, melihat ringkasan dashboard, dan memverifikasi aset melalui QR Code.</p>
+              <h3>Fitur utama</h3>
+              <ul class="project-feature-list">
+                <li>Manajemen aset dengan pencarian dan filter status serta divisi.</li>
+                <li>QR Code untuk setiap aset dan verifikasi melalui pemindaian.</li>
+                <li>Pencatatan pemegang aset dan pengelolaan data karyawan.</li>
+                <li>Dashboard ringkasan dan laporan aset.</li>
+                <li>Login dengan hak akses Administrator.</li>
+              </ul>
+              <h3>Teknologi</h3>
+              <div class="tag-list mono"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+            </div>
+            <div class="project-gallery">
+              <figure class="project-image"><img src="images/projects/dashboard-sistem/dashboard.png" alt="Dashboard Asset Control dengan ringkasan total aset, status ketersediaan, dan peta divisi." width="1918" height="952" loading="lazy"><figcaption class="art-caption mono">DASHBOARD / 2026</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/dashboard-sistem/data-aset.png" alt="Master aset Asset Control dengan tabel inventaris, pencarian, dan filter." width="1918" height="952" loading="lazy"><figcaption class="art-caption mono">MASTER ASET / 2026</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/dashboard-sistem/login.png" alt="Halaman login Asset Control untuk administrator." width="1909" height="946" loading="lazy"><figcaption class="art-caption mono">LOGIN / 2026</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/dashboard-sistem/scan-qr.png" alt="Halaman verifikasi Asset Control untuk memindai QR Code dan memeriksa aset." width="1909" height="943" loading="lazy"><figcaption class="art-caption mono">VERIFIKASI QR / 2026</figcaption></figure>
+            </div>
+          </div>
+        </dialog>
+        <dialog class="project-detail-dialog" id="sm-sport-center-detail" aria-labelledby="sm-sport-center-title">
+          <div class="project-detail-header">
+            <div><p class="mono project-type">02 — WEB APPLICATION</p><h2 id="sm-sport-center-title">SM Sport Center: Booking Lapangan</h2></div>
+            <button class="project-detail-close" type="button" data-project-detail-close aria-label="Tutup detail proyek">×</button>
+          </div>
+          <div class="project-detail-body">
+            <div class="project-detail-copy">
+              <p class="project-detail-summary">Platform reservasi online untuk memilih cabang olahraga, melihat detail lapangan, dan mengelola booking di SM Sport Center.</p>
+              <h3>Fitur utama</h3>
+              <ul class="project-feature-list">
+                <li>Reservasi lapangan olahraga secara online selama 24 jam.</li>
+                <li>Pilihan kategori Futsal, Badminton, Basket, Voli, dan Tenis.</li>
+                <li>Detail lapangan dengan harga per jam, jam operasional, lokasi, dan fasilitas.</li>
+                <li>Dashboard admin untuk memantau lapangan, booking, konfirmasi, dan pendapatan.</li>
+                <li>Pengelolaan lapangan, booking, laporan pendapatan, dan data pengguna.</li>
+              </ul>
+            </div>
+            <div class="project-gallery">
+              <figure class="project-image"><img src="images/projects/sm-sport-center/admin-dashboard.png" alt="Dashboard admin dengan ringkasan lapangan aktif, booking, konfirmasi, dan pendapatan." width="1551" height="768" loading="lazy"><figcaption class="art-caption mono">DASHBOARD ADMIN</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/sm-sport-center/court-management.png" alt="Tabel pengelolaan lapangan dengan kategori, harga per jam, jam operasional, dan status." width="1539" height="768" loading="lazy"><figcaption class="art-caption mono">KELOLA LAPANGAN</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/sm-sport-center/homepage.png" alt="Halaman utama SM Sport Center untuk reservasi lapangan olahraga online." width="1551" height="768" loading="lazy"><figcaption class="art-caption mono">BERANDA</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/sm-sport-center/sport-categories.png" alt="Pilihan kategori olahraga Futsal, Badminton, Basket, Voli, dan Tenis." width="1548" height="768" loading="lazy"><figcaption class="art-caption mono">KATEGORI OLAHRAGA</figcaption></figure>
+              <figure class="project-image"><img src="images/projects/sm-sport-center/court-detail.png" alt="Halaman detail lapangan dengan harga, jam operasional, lokasi, dan fasilitas." width="1557" height="768" loading="lazy"><figcaption class="art-caption mono">DETAIL LAPANGAN</figcaption></figure>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </section>
+
+    <section class="section section-bordered" id="experience">
+      <div class="container experience-grid">
+        <div><div class="section-label reveal"><span class="mono">04 / JOURNEY</span><span class="label-line"></span></div><div class="section-intro reveal"><h2>Perjalanan sejauh ini</h2><p>Pengalaman dan pendidikan yang membentuk cara saya berkarya.</p></div></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-marker"></span><p class="mono timeline-date">2023 — SEKARANG</p><h3>Teknologi Informasi</h3><p class="timeline-place">Universitas Bina Sarana Informatika · Margonda, Depok</p><p class="timeline-description">Mahasiswa Semester 7 · IPK sementara 3,77.</p></article>
+          <article class="timeline-item reveal"><span class="timeline-marker"></span><h3>Magang Administrasi &amp; Kreatif</h3><p class="timeline-place">PT Divija Triyasa Creative · Jakarta</p><ul class="timeline-description"><li>Mengelola input data operasional ke sistem internal perusahaan dengan tingkat akurasi tinggi, termasuk verifikasi dan pengecekan ulang data.</li><li>Membuat konten promosi digital sebagai pendukung kebutuhan operasional tim.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="section-label reveal"><span class="mono">05 / CONTACT</span><span class="label-line"></span></div>
+        <div class="contact-content reveal">
+          <p class="mono contact-kicker">ADA IDE YANG INGIN DIWUJUDKAN?</p>
+          <h2>Mari buat sesuatu<br>yang <span>berarti.</span></h2>
+          <p class="contact-description">Terbuka untuk kesempatan, proyek, dan percakapan menarik. Jangan ragu untuk menghubungi saya.</p>
+          <div class="contact-email-row"><a class="email-address" href="mailto:suhendriawann@gmail.com">suhendriawann@gmail.com</a><button class="copy-email" type="button" data-email="suhendriawann@gmail.com" aria-live="polite">Salin email</button></div>
+          <div class="social-links"><a href="https://github.com/suhendriawan-dev" target="_blank" rel="noopener noreferrer" aria-label="Buka profil GitHub (tab baru)">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/suhendriawan-suhendriawan-b3772b44a/" target="_blank" rel="noopener noreferrer" aria-label="Buka profil LinkedIn (tab baru)">LinkedIn <span>↗</span></a><a href="https://www.instagram.com/ehn_dri/" target="_blank" rel="noopener noreferrer" aria-label="Buka profil Instagram (tab baru)">Instagram <span>↗</span></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">S.</span><span>SUHENDRIAWAN</span></a><p class="mono">© <span id="current-year"></span> SUHENDRIAWAN. DIBUAT DENGAN SEDERHANA.</p><a class="back-to-top" href="#home">Kembali ke atas ↑</a></div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
